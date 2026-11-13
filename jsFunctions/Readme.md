@@ -1,1 +1,1 @@
-This contains the functions
+This contains functions
