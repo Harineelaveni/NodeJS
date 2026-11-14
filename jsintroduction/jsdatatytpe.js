@@ -67,11 +67,13 @@ console.log(c1.description);     // o/p is hello
   let id = Symbol("big");
   let person = {
                  name : 'Jack', 
-                 [id] : 123
+                // [id] : 123
                };
   console.log(person);      //  o/p -- { name: 'Jack', Symbol(id): 123 }
   console.log(id.description);
-  console.log(person[big])
+ // console.log(person[big])
+  person.[big]
+
 
 
 
