@@ -72,8 +72,54 @@ console.log(c1.description);     // o/p is hello
   console.log(person);      //  o/p -- { name: 'Jack', Symbol(id): 123 }
   console.log(id.description);     // o/p  -- big
  console.log(person[id]);          // o/p  -- 123
-  
 
+ //  Symbols are no incuded in for...in loop
+
+   let id = Symbol("id");
+   let person = { 
+       name : "Jack",
+       age : 25,
+       [id] : 12
+   };
+ // using for ... in
+
+  for (let key in person)
+  {
+     console.log(key);
+  }
+  console.log(person[id]); 
+  console.log(person['name']);
+  console.log(person.name);
+  console.log(person['age']);
+  console.log(person.age);
+ // Using Symbols in Object
+
+
+  
+const id = Symbol('Userid');
+console.log(id);
+console.log(id.description);
+
+const usr = {};
+
+ Object.defineProperty(usr, "sal", {
+  value : 5000,
+  enumerable : true
+ });
+
+  console.log(Object.keys(usr));
+  console.log(usr.sal);
+  
+  // how can check the data type of variable?
+
+  let name= "Ram";
+  console.log(typeof(name));
+
+  let b= 25;
+  console.log(typeof(b));
+
+  let c = null;
+  console.log(typeof(c)); // by default that typeof returned Object for the NULL
 
 
 
