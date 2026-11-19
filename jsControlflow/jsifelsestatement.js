@@ -1,4 +1,4 @@
-let marks = 50;
+/*let marks = 50;
 if (marks >= 35)
 {
     console.log("you passed the examination");
@@ -26,16 +26,21 @@ if (num > 0)
     console.log("The given number is -ve:", n);
 
 
-const number = prompt("Enter a number: ");
+const number = 32;
 
 // check if number is greater than 0
 if (number > 0) {
     // the body of the if statement
     console.log("positive number");
 }
-
+else
 console.log("nice number");
 
 //-----------
-
-20
+*/
+const prompt = require("prompt-sync")();
+const score = Number(prompt("Please enter the score : "))
+if (score >= 40)
+    console.log("exam passed");
+else
+    console.log("Exam failed");
