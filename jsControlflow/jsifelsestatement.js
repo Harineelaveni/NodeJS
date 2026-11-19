@@ -44,3 +44,5 @@ if (score >= 40)
     console.log("exam passed");
 else
     console.log("Exam failed");
+
+
