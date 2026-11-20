@@ -1,10 +1,10 @@
 
 
 const prompt = require("prompt-sync")();
-const a = Number(prompt("Please enter the value of a : "));
-const b = Number(prompt("Please enter the value of b : "));
+let a = Number(prompt("Please enter the value of a : "));
+let b = Number(prompt("Please enter the value of b : "));
 
-        const temp = a;
+        let temp = a;
         a = b;
         b = temp;
 
