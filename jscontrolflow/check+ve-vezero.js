@@ -14,5 +14,8 @@ else
 // check the given number is odd or even
 
 let num = Number(prompt("Enter the number :"));
- if num %
+ if (num % 2 == 0)
+  console.log('The given number is even');
+else if (num % 3 == 0)
+    console.log("the given number is odd");
 
