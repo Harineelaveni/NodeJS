@@ -34,7 +34,7 @@ while (x > 0)
 let a = 0, s = 0;
 do{
     s += a;
-    a = parseInt(prompt("Enter the value of a :"));
+    a = parseInt(prompt(`Enter the value of a :`));
     
 }
 while (a >= 0)
